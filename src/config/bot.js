@@ -171,6 +171,22 @@ export const botConfig = {
 
     // Daily reward amount.
     dailyAmount: 100,
+    
+    // Give coins.
+    
+    import os
+    import discord
+    from discord.ext import commands
+
+    Initialize bot with intents
+    intents = discord.Intents.default()
+    intents.message_content = True
+    bot = commands.Bot(command_prefix="!", intents=intents)
+
+    bot.command()
+    async def give(ctx, amount: int, member: discord.Member):
+    # Sends the formatted confirmation message
+    await ctx.send(f"✅ Give {amount} to to {member.display_name}")
 
     // Work command random payout range.
     workMin: 10,
