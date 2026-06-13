@@ -164,7 +164,7 @@ export const botConfig = {
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 100000,
 
     // Maximum bank amount before upgrades (if upgrades are used).
     baseBankCapacity: 100000,
@@ -184,8 +184,8 @@ export const botConfig = {
     robSuccessRate: 0.4,
 
     // Jail time after failed rob (milliseconds).
-    // 3600000 = 1 hour.
-    robFailJailTime: 3600000, 
+    // 30 = 30 seconds.
+    robFailJailTime: 30, 
   },
 
   // =========================
